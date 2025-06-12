@@ -8,13 +8,13 @@ jobs:
       name: "Create custom image 1"
       vm:
         create:
-          name: 03-org-images-t3
+          name: 03-org-images-t5
       script:
         - echo "Running Job 1"
     - stage: "Tests"
       name: "Create custom image 2"
       vm:
         create:
-          name: 03-org-images-t4
+          name: 03-org-images-t6
       script:
         - echo "Running Job 2"
