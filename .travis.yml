@@ -8,6 +8,6 @@ jobs:
       name: "Create custom image 1"
       vm:
         create:
-          name: 03-org-images-t23
+          name: 03-org-images-t24
       script:
         - echo "Running Job 1"
