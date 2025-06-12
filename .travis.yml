@@ -8,34 +8,6 @@ jobs:
       name: "Create custom image 1"
       vm:
         create:
-          name: 03-org-images-t18
+          name: 03-org-images-t23
       script:
         - echo "Running Job 1"
-    - stage: "Tests"
-      name: "Create custom image 2"
-      vm:
-        create:
-          name: 03-org-images-t19
-      script:
-        - echo "Running Job 2"
-    - stage: "Tests"
-      name: "Create custom image 3"
-      vm:
-        create:
-          name: 03-org-images-t20
-      script:
-        - echo "Running Job 3"
-    - stage: "Tests"
-      name: "Create custom image 4"
-      vm:
-        create:
-          name: 03-org-images-t21
-      script:
-        - echo "Running Job 4"
-    - stage: "Tests"
-      name: "Create custom image 5"
-      vm:
-        create:
-          name: 03-org-images-t22
-      script:
-        - echo "Running Job 5"
