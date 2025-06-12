@@ -1,13 +1,20 @@
+os: linux
+language: generic
+dist: focal
+
 jobs:
   include:
-    - stage: "Test"
-      name: "Use custom image 2305-image3"
+    - stage: "Tests"
+      name: "Create custom image 1"
       vm:
-        use:
+        create:
           name: 03-org-images-t3
-
-    - stage: "Test"
-      name: "Use custom image 2305-image4"
+      script:
+        - echo "Running Job 1"
+    - stage: "Tests"
+      name: "Create custom image 2"
       vm:
-        use:
+        create:
           name: 03-org-images-t4
+      script:
+        - echo "Running Job 2"
